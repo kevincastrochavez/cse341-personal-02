@@ -1,0 +1,11 @@
+{
+  "name": "02_personal_assignment",
+  "version": "1.0.0",
+  "description": "Code for personal assignment w02",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Castro",
+  "license": "ISC"
+}
