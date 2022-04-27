@@ -5,7 +5,7 @@ const contactsRoutes = require('./routes/contacts');
 const port = process.env.PORT || 8080;
 const app = express();
 
-app.use('/', contactsRoutes);
+app.use('/contacts', contactsRoutes);
 
 mongodb.initDb((err, mongodb) => {
   if (err) {
