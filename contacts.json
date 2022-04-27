@@ -1,0 +1,23 @@
+[
+  {
+    "firstName": "Citlalli",
+    "lastName": "Gonzalez",
+    "email": "citlaglez@gmail.com",
+    "favoriteColor": "Orange",
+    "birthday": "January 31"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Raya",
+    "email": "davidraya@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "November 4"
+  },
+  {
+    "firstName": "Cindy",
+    "lastName": "Castro",
+    "email": "cindycastroc@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "July 15"
+  }
+]
