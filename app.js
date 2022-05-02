@@ -7,7 +7,7 @@ const app = express();
 
 app.use('/contacts', contactsRoutes);
 
-mongodb.initDb((err, mongodb) => {
+mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {
