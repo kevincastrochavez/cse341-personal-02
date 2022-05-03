@@ -35,8 +35,32 @@ const createContact = async (req, res) => {
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
-    res.status(500).json(`An error occurred: ${response.error}`);
+    res.status(500).json(`An error occurred creating a contact: ${response.error}`);
   }
 };
 
-module.exports = { getAllContacts, getContact, createContact };
+const updateContact = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
+
+  const contact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  };
+
+  const response = await mongodb
+    .getDb()
+    .db()
+    .collection('contacts')
+    .replaceOne({ _id: userId }, contact);
+
+  if (response.modifiedCount > 0) {
+    res.status(204).send();
+  } else {
+    res.status(500).json(`An error occurred updating a contact: ${response.error}`);
+  }
+};
+
+module.exports = { getAllContacts, getContact, createContact, updateContact };

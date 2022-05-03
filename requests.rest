@@ -15,6 +15,14 @@ content-type: application/json
 "_id": "6269934c28437d486bd8232f", "firstName": "Elena", "lastName": "Bobadilla", "email": "elenab@gmail.com", "favoriteColor": "Light Pink", "birthday": "04/21/1988"
 }
 
+###
+PUT http://localhost:8080/contacts/6269934c28437d486bd8232c HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"Citlalli", "lastName":"Gonzalez", "email":"citlaglez@gmail.com", "favoriteColor":"Blue", "birthday":"January 31"
+}
+
 
 
 
