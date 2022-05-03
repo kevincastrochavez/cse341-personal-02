@@ -21,4 +21,22 @@ const getContact = async (req, res) => {
   });
 };
 
-module.exports = { getAllContacts, getContact };
+const createContact = async (req, res) => {
+  const contact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  };
+
+  const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
+
+  if (response.acknowledged) {
+    res.status(201).json(response);
+  } else {
+    res.status(500).json(`An error occurred: ${response.error}`);
+  }
+};
+
+module.exports = { getAllContacts, getContact, createContact };

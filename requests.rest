@@ -1,17 +1,30 @@
 # localhost
 
 GET http://localhost:8080/contacts
+###
 GET http://localhost:8080/contacts/6269934c28437d486bd8232c
+###
 GET http://localhost:8080/contacts/6269934c28437d486bd8232d
+###
 GET http://localhost:8080/contacts/6269934c28437d486bd8232e
+###
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
+
+{
+"_id": "6269934c28437d486bd8232f", "firstName": "Elena", "lastName": "Bobadilla", "email": "elenab@gmail.com", "favoriteColor": "Light Pink", "birthday": "04/21/1988"
+}
 
 
 
 
 
 # Production
-
+###
 GET https://personal-assignmenr-w02.herokuapp.com/contacts
+###
 GET https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd8232c
+###
 GET https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd8232d
+###
 GET https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd8232e
