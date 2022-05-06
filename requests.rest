@@ -22,7 +22,7 @@ content-type: application/json
 "firstName":"Citlalli", "lastName":"Gonzalez", "email":"citlaglez@gmail.com", "favoriteColor":"Blue", "birthday":"January 31"
 }
 ###
-DELETE http://localhost:8080/contacts/627099186d857e3f0b2cc4f7 HTTP/1.1
+DELETE http://localhost:8080/contacts/6275b2bc59828d9a658d9179 HTTP/1.1
 
 
 
@@ -36,3 +36,19 @@ GET https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd82
 GET https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd8232d
 ###
 GET https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd8232e
+###
+POST https://personal-assignmenr-w02.herokuapp.com/contacts HTTP/1.1 
+content-type: application/json
+
+{
+"_id": "6269934c28437d486bd8232f", "firstName": "Elena", "lastName": "Bobadilla", "email": "elenab@gmail.com", "favoriteColor": "Light Pink", "birthday": "04/21/1988"
+}
+###
+PUT https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd8232c HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"Citlalli", "lastName":"Gonzalez", "email":"citlaglez@gmail.com", "favoriteColor":"Blue", "birthday":"January 31"
+}
+###
+DELETE https://personal-assignmenr-w02.herokuapp.com/contacts/6275b2bc59828d9a658d9179 HTTP/1.1
