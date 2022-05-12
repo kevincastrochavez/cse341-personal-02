@@ -48,7 +48,7 @@ PUT https://personal-assignmenr-w02.herokuapp.com/contacts/6269934c28437d486bd82
 content-type: application/json
 
 {
-"firstName":"Citlalli", "lastName":"Gonzalez", "email":"citlaglez@gmail.com", "favoriteColor":"Orange", "birthday":"January 31"
+"firstName":"Citlalli", "lastName":"Gonzalez", "email":"citlaglez@gmail.com", "favoriteColor":"Blue", "birthday":"January 31"
 }
 ###
 DELETE https://personal-assignmenr-w02.herokuapp.com/contacts/6275b3fdeb4f1382bee029da HTTP/1.1
